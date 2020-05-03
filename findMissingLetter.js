@@ -10,10 +10,9 @@ function findMissingLetter(array)
         
         if(array[i].charCodeAt(0) != currentChar)
         {
-            break;
+            return String.fromCharCode(currentChar);
         }
         currentChar++;
     }
 
-    return String.fromCharCode(currentChar);
 }
